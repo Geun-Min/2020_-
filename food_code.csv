@@ -1,69 +1,258 @@
-﻿메뉴,이진수 코드,코드,질문에 대한 답변
-쭈꾸미볶음,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-낙지볶음,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-해물탕,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-아구찜,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-해물찜,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-낙곱새,"""1111""",yyyy,"고기o, 익은o, 매움o, 해산물o"
-닭발,"""11101""",yyyny,"고기o, 익은o, 매움o, 해산물x, 닭o"
-매운 치킨,"""11101""",yyyny,"고기o, 익은o, 매움o, 해산물x, 닭o"
-닭볶음탕,"""11101""",yyyny,"고기o, 익은o, 매움o, 해산물x, 닭o"
-양념곱창,"""11100""",yyynn,"고기o, 익은o, 매움o, 해산물x, 닭x"
-등갈비,"""11100""",yyynn,"고기o, 익은o, 매움o, 해산물x, 닭x"
-불족발,"""11100""",yyynn,"고기o, 익은o, 매움o, 해산물x, 닭x"
-제육볶음,"""11100""",yyynn,"고기o, 익은o, 매움o, 해산물x, 닭x"
-대하,"""1101""",yyny,"고기o, 익은o, 매움x, 해산물o"
-조개탕,"""1101""",yyny,"고기o, 익은o, 매움x, 해산물o"
-치킨,"""11001""",yynny,"고기o, 익은o, 매움x, 해산물x, 닭o"
-백숙,"""11001""",yynny,"고기o, 익은o, 매움x, 해산물x, 닭o"
-삼계탕,"""11001""",yynny,"고기o, 익은o, 매움x, 해산물x, 닭o"
-돼지고기류,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-탕수육,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-족발,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-보쌈,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-돈까스,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-만두,"""110001""",yynnny,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지o"
-오리고기,"""110000""",yynnnn,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지x"
-소고기류,"""110000""",yynnnn,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지x"
-스테이크,"""110000""",yynnnn,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지x"
-불고기,"""110000""",yynnnn,"고기o, 익은o, 매움x, 해산물x, 닭x, 돼지x"
-초밥,"""1011""",ynyy,"고기o, 익은x, 양 많음o, 밥o"
-간장게장,"""1011""",ynyy,"고기o, 익은x, 양 많음o, 밥o"
-회덮밥,"""1011""",ynyy,"고기o, 익은x, 양 많음o, 밥o"
-삼합,"""1010""",ynyn,"고기o, 익은x, 양 많음o, 밥x"
-회,"""1010""",ynyn,"고기o, 익은x, 양 많음o, 밥x"
-육회,"""1010""",ynyn,"고기o, 익은x, 양 많음o, 밥x"
-라면,"""0111""",nyyy,"고기x, 얼큰o, 매움o, 면o"
-짬뽕,"""0111""",nyyy,"고기x, 얼큰o, 매움o, 면o"
-육개장 칼국수,"""0111""",nyyy,"고기x, 얼큰o, 매움o, 면o"
-부대찌개,"""0110""",nyyn,"고기x, 얼큰o, 매움o, 면x"
-순두부찌개,"""0110""",nyyn,"고기x, 얼큰o, 매움o, 면x"
-김치찌개,"""0110""",nyyn,"고기x, 얼큰o, 매움o, 면x"
-매운 국밥류,"""0110""",nyyn,"고기x, 얼큰o, 매움o, 면x"
-우동,"""0101""",nyny,"고기x, 얼큰o, 매움x, 면o"
-라멘,"""0101""",nyny,"고기x, 얼큰o, 매움x, 면o"
-쌀국수,"""0101""",nyny,"고기x, 얼큰o, 매움x, 면o"
-칼국수,"""0101""",nyny,"고기x, 얼큰o, 매움x, 면o"
-안 매운 국밥류,"""01001""",nynny,"고기x, 얼큰o, 매움x, 면x, 밥O"
-된장찌개,"""00001""",nnnny,"고기x, 얼큰x, 매움x, 면x, 밥o"
-만두국,"""01000""",nynnn,"고기x, 얼큰o, 매움x, 면x, 밥x"
-수제비,"""01000""",nnyy,"고기x, 얼큰o, 매움x, 면x, 밥x"
-비빔면,"""0011""",nnyny,"고기x, 얼큰x, 매움o, 면o"
-비빔밥,"""00101""",nnyny,"고기x, 얼큰x, 매움o, 면x, 밥o"
-커리,"""00101""",nnynn,"고기x, 얼큰x, 매움o, 면x, 밥o"
-떡볶이,"""00100""",nnynn,"고기x, 얼큰x, 매움o, 면x, 밥x"
-양장피,"""00100""",nnny,"고기x, 얼큰x, 매움o, 면x, 밥x"
-짜장면,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-냉면,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-팟타이,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-파스타,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-냉면,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-냉모밀,"""0001""",nnny,"고기x, 얼큰x, 매움x, 면o"
-김밥,"""00001""",nnnny,"고기x, 얼큰x, 매움x, 면x, 밥o"
-주먹밥,"""00001""",nnnny,"고기x, 얼큰x, 매움x, 면x, 밥o"
-컵밥,"""00001""",nnnny,"고기x, 얼큰x, 매움x, 면x, 밥o"
-밥버거,"""00001""",nnnny,"고기x, 얼큰x, 매움x, 면x, 밥o"
-전,"""00000""",nnnnn,"고기x, 얼큰x, 매움x, 면x, 밥x"
-피자,"""00000""",nnnnn,"고기x, 얼큰x, 매움x, 면x, 밥x"
-햄버거,"""00000""",nnnnn,"고기x, 얼큰x, 매움x, 면x, 밥x"
-샌드위치,"""00000""",nnnnn,"고기x, 얼큰x, 매움x, 면x, 밥x"
+﻿메뉴,코드,
+동태탕,yyyyy,1
+매운탕,yyyyy,2
+송어매운탕,yyyyy,3
+통오징어찌개,yyyyy,4
+해물탕,yyyyy,5
+갈비해물찜,yyyyny,1
+대구해물뽈찜,yyyyny,2
+아구해물찜,yyyyny,3
+아귀찜,yyyyny,4
+해물찜,yyyyny,5
+낙곱새,yyyynny,1
+낙삼새,yyyynny,2
+오징어볶음,yyyynny,1
+쭈꾸미닭갈비,yyyynny,2
+쭈꾸미볶음,yyyynny,3
+깐쇼새우,yyyynny,4
+오징어덮밥,yyyynnn,1
+갈치조림,yyyynnn,2
+명태조림,yyyynnn,3
+황태조림,yyyynnn,4
+닭볶음탕,yyyny,1
+닭발,yyyny,2
+닭강정,yyyny,3
+닭갈비,yyyny,4
+삼겹살닭갈비,yyyny,5
+고추잡채,yyynnyy,1
+고추장삼겹살,yyynnyy,2
+곱창볶음,yyynnyy,3
+김치삼겹살두루치기,yyynnyy,4
+두루치기,yyynnyy,5
+마파두부,yyynnyy,6
+막창볶음,yyynnyy,7
+제육볶음,yyynnyy,8
+곱창전골,yyynnyny,1
+돼지김치전골,yyynnyny,2
+얼큰만두전골,yyynnyny,3
+울대찌개,yyynnyny,4
+짜글이찌개,yyynnyny,5
+매운등갈비찜,yyynnynn,1
+묵은지갈비찌개,yyynnynn,2
+뼈해장국,yyynnynn,3
+제육덮밥,yyynnynn,4
+제육볶음쌈밥,yyynnynn,5
+부대찌개,yyynnn,1
+오리주물럭,yyynnn,2
+육개장,yyynnn,3
+동태지리탕,yynyy,1
+동태찌개,yynyy,2
+해물누룽지탕,yynyy,3
+어묵전골,yynyy,4
+추어탕,yynyy,5
+대게,yynyny,1
+킹크랩,yynyny,2
+랍스타,yynyny,3
+조개구이,yynynny,1
+장어구이,yynynny,2
+생선구이,yynynny,3
+석화,yynynny,4
+삼치구이,yynynny,5
+고갈비,yynynny,6
+팔보채,yynynnn,1
+유산슬,yynynnn,2
+새우볶음밥,yynynnn,3
+해물볶음밥,yynynnn,4
+감바스,yynynnn,5
+해물오꼬노미야끼,yyny,1
+올갱이국,yyny,2
+새우튀김,yyny,3
+올갱이해장국,yyny,4
+황태해장국,yyny,5
+바지락칼국수,yyny,6
+생선까스,yyny,7
+해물파전,yyny,8
+크림새우,yyny,9
+바지락칼국수,yyny,10
+파닭,yynnyy,1
+통닭,yynnyy,2
+치킨,yynnyy,3
+치킨샐러드,yynnyy,4
+닭똥집,yynnyy,5
+전기통닭,yynnyy,6
+찜닭,yynnyn,1
+삼계탕,yynnyn,2
+백숙,yynnyn,3
+누룽지닭백숙,yynnyn,4
+간장찜닭,yynnyn,5
+간장닭발,yynnyn,6
+꼬치구이,yynnyn,7
+간장닭갈비,yynnyn,8
+가브리살,yynnnyy,1
+갈매기살,yynnnyy,2
+덜미살,yynnnyy,3
+데리야끼통삼겹살,yynnnyy,4
+돼지갈비,yynnnyy,5
+돼지막창,yynnnyy,6
+돼지부속구이,yynnnyy,7
+뽈살,yynnnyy,8
+삼겹살,yynnnyy,9
+오도독살,yynnnyy,10
+주먹고기,yynnnyy,11
+항정살,yynnnyy,12
+뒷고기,yynnnyy,13
+군만두,yynnnyny,1
+가츠동,yynnnyny,2
+돈까스,yynnnyny,3
+로스카츠,yynnnyny,4
+일본식순살돈까스,yynnnyny,5
+철판돈카츠,yynnnyny,6
+치즈돈까스,yynnnyny,7
+탕수육,yynnnyny,8
+통까스,yynnnyny,9
+포크커틀렛,yynnnyny,10
+히레카츠,yynnnyny,11
+술국,yynnnynny,1
+수육국밥,yynnnynny,2
+돼지등뼈곰탕,yynnnynny,3
+감자탕,yynnnynny,4
+만두국,yynnnynny,5
+내장국밥,yynnnynny,6
+떡만두국,yynnnynny,7
+순대국밥,yynnnynny,8
+머리국밥,yynnnynny,9
+김치감자탕,yynnnynny,10
+돼지숯불고기,yynnnynnn,1
+족발,yynnnynnn,2
+소시지,yynnnynnn,3
+보쌈,yynnnynnn,4
+머리고기,yynnnynnn,5
+만두,yynnnynnn,6
+수육,yynnnynnn,7
+대패삼겹볶음,yynnnynnn,8
+북경오리구이,yynnnny,1
+소갈비살,yynnnny,2
+소고기,yynnnny,3
+소고기다다끼,yynnnny,4
+소막창,yynnnny,5
+양갈비,yynnnny,6
+양꼬치,yynnnny,7
+양꼬치,yynnnny,8
+오리로스,yynnnny,9
+오리훈제,yynnnny,10
+우삼겹,yynnnny,11
+소곱창,yynnnny,12
+갈비탕,yynnnnny,1
+설렁탕,yynnnnny,2
+도가니탕,yynnnnny,3
+곰탕,yynnnnny,4
+염소전골,yynnnnny,5
+염소탕,yynnnnny,6
+일본전골,yynnnnny,7
+오리탕,yynnnnny,8
+오리백숙,yynnnnny,9
+오리능이백숙,yynnnnny,10
+난자완스,yynnnnnn,1
+간장불고기,yynnnnnn,2
+석쇠불고기쌈밥,yynnnnnn,3
+소숯불고기,yynnnnnn,4
+햄버거,yynnnnnn,5
+훠궈,yynnnnnn,6
+사케동,ynyy,1
+초밥,ynyy,2
+연어초밥,ynyy,3
+게장백반,ynyy,4
+게장,ynyy,5
+회,ynyn,1
+오징어회,ynyn,2
+산낙지,ynyn,3
+물회,ynyn,4
+다랑어,ynyn,5
+광어회,ynyn,6
+물회,ynyn,7
+송어회,ynyn,8
+송어비빔회,ynyn,9
+연어샐러드,ynyn,10
+과메기,ynyn,11
+육회문어삼합,ynyn,12
+참치회,ynyn,13
+오징어회,ynyn,14
+오징어회무침,ynyn,15
+오징어물회,ynyn,16
+육회,ynn,1
+비빔국수,nyyy,1
+비빔냉면,nyyy,2
+쟁반국수,nyyy,3
+쫄면,nyyy,4
+김치말이국수,nyyn,1
+김치우동,nyyn,2
+로제파스타,nyyn,3
+마라탕,nyyn,4
+매운짜장면,nyyn,5
+사천짬뽕,nyyn,6
+짬뽕,nyyn,7
+순두부찌개,nyny,1
+비빔밥,nyny,2
+김치찌개,nyny,3
+버섯찌개,nyny,4
+김치볶음밥,nyny,5
+짬뽕밥,nyny,6
+떡볶이,nynn,1
+순대볶음,nynn,2
+회냉면,nnyy,1
+냉면,nnyy,2
+소바,nnyy,3
+칼국수,nnyn,1
+짜장면,nnyn,2
+우동,nnyn,3
+오븐스파게티,nnyn,4
+국수,nnyn,5
+가락우동,nnyn,6
+잔치국수,nnyn,7
+간짜장,nnyn,8
+까르보나라,nnyn,9
+스파게티,nnyn,10
+파스타,nnyn,11
+볶음면,nnyn,12
+크림파스타,nnyn,13
+들깨칼국수,nnyn,14
+멸치국수,nnyn,15
+어묵국수,nnyn,16
+돈코츠라멘,nnyn,17
+쟁반짜장,nnyn,18
+올갱이칼국수,nnyn,19
+청국장,nnny,
+콩나물해장국,nnny,
+참치볶음밥,nnny,
+오므라이스,nnny,
+보리밥,nnny,
+된장찌개,nnny,
+꼬마김밥,nnny,
+김밥,nnny,
+국밥,nnny,
+가지찜백반,nnny,
+곤드레돌솥밥,nnny,
+버섯전골,nnny,
+쌈밥,nnny,
+짜장밥,nnny,
+볶음밥,nnny,
+죽,nnny,
+컵밥,nnny,
+규동,nnny,
+돈부리,nnny,
+부리또,nnny,
+피자,nnnn,1
+파전,nnnn,2
+튀김,nnnn,3
+전,nnnn,4
+오뎅,nnnn,5
+순대,nnnn,6
+수제비,nnnn,7
+빈대떡,nnnn,8
+묵사발,nnnn,9
+감자튀김,nnnn,10
+누룽지탕,nnnn,11
+포테이토피자,nnnn,12
+올갱이수제비,nnnn,13
+치즈스틱,nnnn,14
+떡볶이전골,nyny,1

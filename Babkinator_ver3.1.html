@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <style>
+            #to_server{
+                display:none;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>this is akinator</h1>
+        <p id="question"></p>
+        <p id="code"></p>
+
+            <button name="yes" onclick="push_yes()">YES</button>
+            <button name="no" onclick="push_no()">NO</button>
+            <button name="reset" onclick="reset()">RESET</button>
+            <button id="to_server" onclick="alert('server')">to_server</button>
+        <script>
+            // 2019029029 황근민
+            // 반복되는 질문을 제시 및 답변누적
+
+            // 답변을 저장할 변수를 전역 변수로 선언
+            var food_code = "";
+
+            // 버튼 Yes를 클릭했을 떄 호출할 함수
+            function push_yes()
+            {
+                // 답변 저장하는 변수에 y를 누적
+                food_code += "y";
+                document.getElementById('code').innerHTML = food_code;
+
+                // 새로 누적된 답변을 인자로 새로운 질문 호출
+                babkinator(food_code);
+            }
+
+            // 버튼 No를 클릭했을 때 호출할 함수
+            function push_no()
+            {
+                // 답변을 저장하는 변수에 n를 누적
+                food_code += "n";
+                document.getElementById('code').innerHTML = food_code;
+
+                // 새로 누적된 답변을 인자로 새로운 질문 호출
+                babkinator(food_code);
+            }
+
+            // reset 버튼을 클릭했을 때 호출할 함수
+            function reset()
+            {
+                // 누적된 답변을 초기화
+                food_code = "";
+                document.getElementById('code').innerHTML = food_code;
+
+                // 초기화된 답변으로 질문 호출
+                babkinator(food_code);
+            }
+
+            // 사용자에 답변을 인수로 받아 질문 출력하는 함수
+            function babkinator(food_code)
+            {
+                // 0단계~7단계 질문 배열 통해서 선언
+                var Q0 = ["고기(해산물포함)입니까?"];
+                var Q1 = ["익혀 먹는 음식입니까?", "매운 음식입니까?"];
+                var Q2 = ["매운 음식입니까?", "해산물이 들어가는 음식입니까?", "면이 들어가는 음식입니까?"];
+                var Q3 = ["해산물이 들어가는 음식입니까?", "쌀이 들어가거나 밥과 함께 먹는 음식입니까?"];
+                var Q4 = ["닭이 들어가는 음식입니까?"];
+                var Q5 = ["돼지고기가 들어가는 음식입니까?"];
+                var Q6 = ["튀겨서 먹나요?"];
+                var result = "to_server를 클릭해 제출해주세요.";
+
+                // 0단계 질문
+                // 고기입니까?
+                if(food_code.length == 0)
+                    document.getElementById('question').innerHTML = Q0[0];
+
+                // 1단계 질문
+                else if(food_code.length == 1)
+                {
+
+                    // 고기o
+                    if(food_code == "y")
+                        // 익혀서 먹는 음식입니까?
+                        document.getElementById('question').innerHTML = Q1[0];
+
+                    // 고기x
+                    else if(food_code == "n")
+                        // 매운 음식입니까?
+                        document.getElementById('question').innerHTML = Q1[1];
+                }
+
+                // 2단계 질문
+                else if(food_code.length == 2)
+                {
+                    // 고기o, 익혀서 먹음o
+                    if(food_code == "yy")
+                        // 매운 음식입니까?
+                        document.getElementById('question').innerHTML = Q2[0];
+
+                    // 고기o, 익혀서 먹음x
+                    else if(food_code == "yn")
+                        // 해산물이 들어가는 음식입니까
+                        document.getElementById('question').innerHTML = Q2[1];
+
+                    // 고기x, 매움o 또는 고기x, 매움x
+                    else if(food_code == "ny" || food_code == "nn")
+                        // 면이 들어가는 음식입니까?
+                        document.getElementById('question').innerHTML = Q2[2];
+
+                }
+
+                // 3단계 질문
+                else if(food_code.length == 3)
+                {
+                    // 고기o, 익힘o, 매움o 또는 고기o, 익힘o, 매움x
+                    if(food_code == "yyy" || food_code == "yyn")
+                        // 해산물이 들어가는 음식입니까?
+                        document.getElementById('question').innerHTML = Q3[0];
+
+
+                    // 고기o, 익힘x, 해산물o 또는 고기x, 매움o, 면x 또는 고기x, 매움x, 면x
+                    else if(food_code == "yny" || food_code == "nyn" || food_code == "nnn")
+                        // 쌀이 들어가거나 밥과 함께 먹는 음식입니까?
+                       document.getElementById('question').innerHTML = Q3[1];
+
+
+                    // 고기o, 익힘x, 해산물x 또는 고기x, 매움o, 면o 또는 고기x, 매움x, 면o
+                    else if(food_code == "ynn" || food_code == "nyy" || food_code == "nny")
+                        {
+                            document.getElementById('to_server').style.display = "block";
+                            document.getElementById('question').innerHTML = result;
+                        }
+                 }
+
+                // 4단계 질문
+                else if(food_code.length == 4)
+                {
+                    /* 고기o, 익힘o, 매움o, 해산물o 또는 고기o, 익힘o, 매움x, 해산물o 또는
+                       고기o, 익힘x, 해산물o, 쌀o 또는 고기o, 익힘x, 해산물o, 쌀x 또는
+                       고기x, 매움o, 면x, 쌀o 또는 고기x, 매움o, 면x, 쌀x 또는
+                       고기x, 매움x, 면x, 쌀o 또는 고기x, 매움x, 면x, 쌀x
+                    */
+                    if( food_code == "yyyy" || food_code == "yyny" ||
+                       food_code == "ynyy" || food_code == "ynyn" ||
+                       food_code == "nyny" || food_code == "nynn" ||
+                       food_code == "nnny" || food_code == "nnnn" )
+                    {
+                        document.getElementById('to_server').style.display = "block";
+                        document.getElementById('question').innerHTML = result;
+                    }
+
+                    // 고기o, 익힘o, 매움o, 해산물x 또는 고기o, 익힘o, 매움x, 해산물x
+                    else if(food_code == "yyyn" || food_code == "yynn")
+                        // 닭이 들어가는 음식입니까?
+                        document.getElementById('question').innerHTML = Q4[0];
+
+                 }
+
+                // 5단계 질문
+                else if(food_code.length == 5)
+                {
+                    /*
+                        고기o, 익힘o, 매움o, 해산물x, 닭o 또는 고기x, 익힘o, 매움o, 해산물x, 닭x 또는
+                        고기o, 익힘o, 매움x, 해산물x, 닭o
+                    */
+                    if(food_code == "yyyny" || food_code == "yyynn" ||
+                       food_code == "yynny")
+                    {
+                        document.getElementById('to_server').style.display = "block";
+                        document.getElementById('question').innerHTML = result;
+                    }
+
+
+                    // 고기o, 익힘o, 매움x, 해산물x, 닭x
+                    else if(food_code == "yynnn")
+                        // 돼지고기가 들어가는 음식입니까?
+                        document.getElementById('question').innerHTML = Q5[0];
+
+                }
+
+
+                // 6단계 질문
+                else if(food_code.length == 6)
+                {
+                    // 고기o, 익힘o, 매움x, 해산물x, 닭x, 돼지o
+                    if(food_code == "yynnny")
+                        // 튀겨서 먹나요?
+                        document.getElementById('question').innerHTML = Q6[0];
+
+                    // 고기o, 익힘o, 매움x, 해산물x, 닭x, 돼지x
+                    else if(food_code == "yynnnn")
+                        {
+                        document.getElementById('to_server').style.display = "block";
+                        document.getElementById('question').innerHTML = result;
+                        }
+                }
+
+                // 7단계 질문
+                else if(food_code.length == 7)
+                {
+
+                    // 고기o, 익힘o, 매움x, 해산물x, 닭x, 돼지o, 튀김o 또는 고기o, 익힘o, 매움x, 해산물x, 닭x, 돼지o, 튀김x
+                    if(food_code == "yynnnyy" || food_code == "yynnnyn")
+                    {
+                        document.getElementById('to_server').style.display = "block";
+                        document.getElementById('question').innerHTML = result;
+                    }
+                }
+
+
+            }
+
+            // 처음 시작할 떄 0단계 질문 출력을 위해서 질문 함수 호출
+            babkinator(food_code);
+
+        </script>
+    </body>
+</html>
